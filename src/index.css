@@ -1,3 +1,23 @@
+.bg-img {
+  background: url('./Images/bg.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -50;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.681);
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -40;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +25,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(197, 197, 197, 0.453);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: white;
 }
 
 code {

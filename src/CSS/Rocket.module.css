@@ -1,0 +1,345 @@
+.allSections {
+    display: flex;
+    height: 38rem;
+}
+
+.leftSection {
+    width: 50%;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    animation: appearTransition 1s ease;
+}
+
+.header {
+    font-size: 300%;
+    color: white;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.rocketImg {
+    width: 24rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+}
+
+.rocketPageDots {
+    height: 14px;
+    width: 14px;
+    margin-top: 1.2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-right: 2rem;
+}
+
+.rocketPagination {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pageSection {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.page {
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    margin-top: 1.2rem;
+    border: 0.5px solid white;
+}
+
+.arrowButton {
+    margin: auto 0rem auto 0rem;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.262);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 120% !important;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 300%;
+    margin: 0;
+}
+
+.leftArrow {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 140% !important;
+    cursor: pointer;
+}
+
+.rightArrow {
+    text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 140% !important;
+    cursor: pointer;
+}
+
+
+.arrowButton:hover {
+    color: rgb(255, 255, 255);
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+    color: rgb(255, 255, 255);
+}
+
+.arrowButton:disabled {
+    color: rgba(73, 73, 73, 0.334);
+    background-color: transparent;
+}
+
+.description {
+    text-align: justify;
+    font-size: 120%;
+    color: white;
+    padding-top: 1rem;
+    padding-right: 0rem;
+}
+
+.rightSection {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.225);
+    border-radius: 1rem;
+    animation: appearTransition 2s ease;
+    box-sizing: border-box;
+}
+
+.propButtons {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.buttons {
+    padding-right: 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.448);
+    border-right: 1px solid grey;
+    margin-bottom: auto;
+    background-color: transparent;
+    font-size: 110%;
+    padding-bottom: 0.5rem;
+    transition: 0.4s;
+}
+
+.stage {
+    padding-right: 1rem;
+    margin-top: 1rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.448);
+    border-right: 1px solid grey;
+    margin-bottom: auto;
+    background-color: transparent;
+    font-size: 110%;
+    padding-bottom: 0.5rem;
+    width: 50%;
+    transition: 0.4s;
+}
+
+.last {
+    border: none;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    color: white;
+}
+
+.stage:hover {
+    color: white;
+}
+
+.propDetails {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    height: 75%;
+    overflow-y: hidden;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    padding: auto;
+    margin-left: auto;
+}
+
+
+.label {
+    color: white;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    margin: auto;
+    width: 60%;
+}
+
+.data {
+    color: white;
+    font-weight: bold;
+    display: inline;
+    float: right;
+    width: 40%;
+    margin: auto;
+    text-align: right;
+}
+
+.details {
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.401);
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 0rem;
+}
+
+.stageButtons {
+    width: 100%;
+}
+
+.launches {
+    font-size: 50%;
+    height: 100%;
+    text-align: center;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.launches::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.launches::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+}
+
+.launches::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.launchLink {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 300%;
+    margin: 0.5rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.launchLink:hover {
+    font-weight: normal;
+}
+
+@keyframes appearTransition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .rightSection {
+        margin-top: 4rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.359);
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .pageSection {
+        width: auto;
+        justify-content: center;
+    }
+
+    .allSections {
+        display: block;
+        height: auto;
+    }
+
+    .leftSection {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .propDetails {
+        margin-top: 1rem;
+
+    }
+
+    .details {
+        width: 90%;
+    }
+
+    .data {
+        margin: 2rem 0rem;
+    }
+
+    .label {
+        margin: 2rem 0rem;
+    }
+
+    .buttons {
+        font-size: 80%;
+    }
+
+    .arrow {
+        font-size: 200%;
+    }
+
+    .description {
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+}

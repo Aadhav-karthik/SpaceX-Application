@@ -1,0 +1,110 @@
+.arrow {
+    font-size: 300%;
+    margin: 0;
+}
+
+.leftArrow {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 140% !important;
+    cursor: pointer;
+}
+
+.rightArrow {
+    text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 140% !important;
+    cursor: pointer;
+}
+
+.arrowButton {
+    margin: auto 0rem auto 0rem;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.262);
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 120% !important;
+    cursor: pointer;
+}
+
+.arrowButton:hover {
+    color: white;
+}
+
+.topSection {
+    color: white;
+    width: 80%;
+    margin: 0rem auto;
+    animation: appearTransition 1s linear;
+}
+
+.header {
+    line-height: 1;
+    font-size: 250%;
+    padding: 2rem 0 3rem 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rocketImg {
+    height: 20rem;
+    border-radius: 1rem;
+    ;
+    padding-bottom: 0.5rem;
+}
+
+.details {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes appearTransition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .header {
+        font-size: 150%;
+    }
+
+    .topSection {
+        width: 100%;
+    }
+
+    .rocketImg {
+        height: 20rem;
+        width: 30rem;
+    }
+
+    .details {
+        text-align: justify;
+    }
+}

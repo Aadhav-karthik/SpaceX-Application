@@ -1,0 +1,122 @@
+.inputSection {
+    text-align: center;
+}
+
+.rocketFilter {
+    padding: 0.8rem 5rem 0.8rem 0.8rem;
+    width: 30%;
+    border-radius: 0.4rem;
+    font-size: 120%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.rocketFilter:hover {
+    border: 2px solid rgba(0, 213, 255, 0.641) !important;
+}
+
+.card {
+    border: 2px solid rgba(255, 255, 255, 0.395);
+    border-radius: 0 0 0.6rem 0.6rem;
+    width: 25%;
+    margin-top: 3rem;
+    margin-right: 0.1rem;
+    transition: 0.5s;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.rocketsCards {
+    display: flex;
+    flex-flow: row wrap;
+    animation: slideBottom 1s linear;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.rocketImg {
+    width: 100%;
+    height: 18vw;
+}
+
+.cardDetails {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.rocketName {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.rocketDetails {
+    color: white;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.knowMore {
+    color: rgba(184, 184, 184, 0.756);
+}
+
+.rocketsSection {
+    margin-top: 2rem;
+}
+
+.pageHeader {
+    color: white;
+    font-size: 500%;
+    margin: 0 0 3rem 2rem;
+}
+
+@keyframes slideBottom {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .rocketsCards {
+        display: block;
+        padding: 4rem 0 2rem 0;
+    }
+
+    .card {
+        width: 100%;
+        border: none;
+        margin-top: 1rem;
+        border-radius: 0rem;
+    }
+
+    .cardDetails {
+        padding: 1rem 0 2rem 0;
+        margin-bottom: 4rem;
+        border-bottom: 2px solid white;
+    }
+
+    .rocketImg {
+        height: 140vw;
+    }
+
+    .rocketFilter {
+        width: 70%;
+    }
+
+    .pageHeader {
+        font-size: 450%;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}
