@@ -2,7 +2,7 @@ SPACEX APPLICATION
 
 This is a React Application using the "https://docs.spacexdata.com/" API which displays information majorly on the Rockets, Launches and History of the SpaceX.
 
-Frameworks:
+Frameworks: 
 
 1. Developed purely using ReactJS and the only external dependency used is react-router.
 2. As the application is fairly simple with not too many moving parts and correlations between multiple components UseReducer and UseContext have been used for state management.
